@@ -53,7 +53,6 @@ export default {
     async getDate() {
       const { data: dt } = await this.$http.get('/menus')
       this.listData = dt.data
-      console.log(this.listData)
     },
     goOut() {
       this.$confirm('确定要退出吗?', '提示', {
